@@ -6,6 +6,8 @@ from .serializers import FoodSerializer, FoodListSerializer
 from django.db.models import Prefetch
 
 
+
+
 class FoodCategoryView(viewsets.ViewSet):
     
     serializer_class = FoodListSerializer
