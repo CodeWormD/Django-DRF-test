@@ -1,6 +1,6 @@
 # Test Query
 
-### Have to get the result like this with dishes is_piblish=True and query optimization:
+### Have to get the result like this with Food is_piblish=True and query optimization:
 
 ```
  [
