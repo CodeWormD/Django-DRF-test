@@ -19,7 +19,7 @@ class FoodCategoryView(viewsets.ViewSet):
             .prefetch_related(
                 Prefetch(
                     'food',
-                    queryset=Food.objects.filter(is_publish=True)))
+                    queryset=Food.objects.prefetch_related('additional').filter(is_publish=True)))
             .order_by('pk'))
 
         serializer = FoodListSerializer(queryset, many=True)
